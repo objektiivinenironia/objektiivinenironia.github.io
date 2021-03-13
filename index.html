@@ -50,8 +50,40 @@ Esimerkkipelit:<br>
 
 <!--<a href="https://fi.wikipedia.org/wiki/Infocom">infocom</a>!-->
 
+<h1>An XMLHttpRequest Object</h1>
 
+<!-- hint -->
+<h3>hint</h3>
+<form action=""> 
+<input type="text" id="txt1" onkeyup="showHint(this.value)">
+</form>
 
+<!--fa fa-search-->
+<h3>fa fa-search</h3>
+<form action="gethint.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<p>Output: <span id="txtHint"></span></p> 
+
+<script>
+function showHint(str) {
+  var xhttp;
+  if (str.length == 0) { 
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("txtHint").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "gethint.php?q="+str, true);
+  xhttp.send();
+}
+</script>
 
 </div class="teksti">
 </body>
