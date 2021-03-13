@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE testi>
+
+<luokka>
+<st><s>aakkonen</s><t><tn>38</tn></t></st>
+<st><s>aakkosellinen</s><t><tn>38</tn></t></st>
+<st><s>aakkosellisesti</s><t><tn>99</tn></t></st>
+<st><s>aakkosellisuus</s><t><tn>40</tn></t></st>
+<st><s>aakkosittain</s><t><tn>99</tn></t></st>
+<st><s>aakkosjärjestys</s></st>
+<st><s>aakkosnumeerinen</s></st>
+<st><s>aakkostaa</s><t><tn>53</tn></t></st>
+<st><s>aakkosto</s><t><tn>2</tn></t></st>
+<st><s>aakkostus</s><t><tn>39</tn></t></st>
+</luokka>
