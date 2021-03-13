@@ -9,6 +9,10 @@
 // and at least an element /[root]/title.
 
 
+//get the q parameter from URL
+$q=$_GET["q"];
+
+    
 if (file_exists('testi.xml')) {
     $xml = simplexml_load_file('testi.xml');
 
@@ -24,6 +28,9 @@ foreach($xml->children() as $juttu) {
   echo $juttu->s . ", ";
   echo $juttu->t . ", ";
   echo $juttu->tn . ", ";
+
+  echo "</br></br>"; 
+echo $q;
 }
 
 } else {
